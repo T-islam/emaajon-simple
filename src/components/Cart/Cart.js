@@ -1,4 +1,5 @@
 import React from 'react';
+import './Cart.css'
 
 const Cart = (props) => {
     const cart = props.cart;
@@ -21,7 +22,7 @@ const Cart = (props) => {
     return Number(total)    
 }
     return (
-        <div>
+        <div className="Order-Summery">
             <h3>Order Summary</h3>
             <h3>Items Orderd: {cart.length}</h3>
             <p>Shipping Const: {ShipingCost}</p>
